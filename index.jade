@@ -1,0 +1,51 @@
+//output:index.html
+<!DOCTYPE html>
+html(lang="en")
+head
+  meta(charset="UTF-8")
+  meta(name="viewport", content="width=device-width, initial-scale=1.0")
+  //FONT STYLESHEET
+  link(href="https://fonts.googleapis.com/css?family=Righteous|Roboto" rel="stylesheet")
+  //CUSTOM STYLESHEET
+  link(rel="stylesheet", href="assets/css/style.css")
+  title Document
+body
+  
+  //HEADER
+  header
+    .container
+      h1.banner Batman Trivia Game
+  
+  //GAME CONTAINER    
+  section.container.game-section
+    
+    //TIMER
+    h2.time-remaining.timer Time Remaining
+    h2.time-remaining #[span#seconds] seconds
+    
+    //START BUTTON
+    button#start-button(type='button') Start
+    
+    //RESULTS
+    .results-section
+      h1 Your Results!
+      h3 Answered Correct: #[span#right-answers]
+      h3 Answered Wrong: #[span#wrong-answers]
+      
+      //RESET BUTTON
+      button#try-again(type='button') Try Again
+    
+    //TRIVIA
+    .trivia-section
+      h3.questions 
+      button#answer1.answer(type='button' value="1") Jason Todd
+      button#answer2.answer(type='button' value="2") Dick Grayson
+      button#answer3.answer(type='button' value="3") Damien Wayne
+      button#answer4.answer(type='button' value="4") Barbara Gordon
+        
+      
+  
+
+  //JAVASCRIPT & JQUERY
+  script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js')
+  script(src='assets/javascript/app.js')

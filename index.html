@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en"></html>
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <!--FONT STYLESHEET-->
+  <link href="https://fonts.googleapis.com/css?family=Righteous|Roboto" rel="stylesheet"/>
+  <!--CUSTOM STYLESHEET-->
+  <link rel="stylesheet" href="assets/css/style.css"/>
+  <title>Document</title>
+</head>
+<body>
+  <!--HEADER-->
+  <header>
+    <div class="container">
+      <h1 class="banner">Batman Trivia Game</h1>
+    </div>
+  </header>
+  <!--GAME CONTAINER    -->
+  <section class="container game-section">
+    <!--TIMER-->
+    <h2 class="time-remaining timer">Time Remaining</h2>
+    <h2 class="time-remaining"><span id="seconds"></span> seconds</h2>
+    <!--START BUTTON-->
+    <button id="start-button" type="button">Start</button>
+    <!--RESULTS-->
+    <div class="results-section">
+      <h1>Your Results!</h1>
+      <h3>Answered Correct: <span id="right-answers"></span></h3>
+      <h3>Answered Wrong: <span id="wrong-answers"></span></h3>
+      <!--RESET BUTTON-->
+      <button id="try-again" type="button">Try Again</button>
+    </div>
+    <!--TRIVIA-->
+    <div class="trivia-section">
+      <h3 class="questions"> </h3>
+      <button id="answer1" type="button" value="1" class="answer">Jason Todd</button>
+      <button id="answer2" type="button" value="2" class="answer">Dick Grayson</button>
+      <button id="answer3" type="button" value="3" class="answer">Damien Wayne</button>
+      <button id="answer4" type="button" value="4" class="answer">Barbara Gordon</button>
+    </div>
+  </section>
+  <!--JAVASCRIPT & JQUERY-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="assets/javascript/app.js"></script>
+</body>
