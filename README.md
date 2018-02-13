@@ -1,3 +1,6 @@
-# TriviaGame
+# Trivia Game
 A simple Batman Trivia Game using JavaScript and JQuery.
-Fully implemented with Jade and Sass as well.
+
+Timer set against the accuracy of your answers (multiple choice).
+
+Implemented using Sass and Jade (Pug).
